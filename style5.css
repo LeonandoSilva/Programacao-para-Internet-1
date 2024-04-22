@@ -1,0 +1,12 @@
+th, td {
+    border: 1px solid black;
+}
+table{
+    width: 400px;
+}
+.italico{
+    font-style: italic;
+}
+.li::marker{
+    color: rgb(173, 173, 173);
+}

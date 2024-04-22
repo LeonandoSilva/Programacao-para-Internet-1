@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.esquerda{
+    background-color: gray;
+    width: 12vw;
+    height: 100vh;
+}
+.centro{
+    background-color: yellow;
+    width: 100vw;
+    height: 100vh;
+}
+.direita{
+    background-color: gray;
+    width: 12vw;
+    height: 100vh;
+}
+.nome{
+    background-color: lightgray; 
+    font-size: 40px;
+    text-align: center;
+}
+.guias{
+    display: flex;
+    flex-direction: row;
+}
+
+.vermelha{
+    background-color: rgb(248, 81, 81);
+    width: 33%;
+    height: fit-content;
+}
+
+.azul{
+    background-color: rgb(72, 151, 255);
+    width: 33%;
+    height: fit-content;
+}
+
+.roxo{
+    background-color: rgb(173, 85, 255);
+    width: 33%;
+    height: fit-content;
+}
