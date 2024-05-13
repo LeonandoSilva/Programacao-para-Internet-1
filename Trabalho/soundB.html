@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worst Volume Control Ever</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <img  id="ssj" src="goku.png">
+    <input type="range" id="volumeSlider" min="0" max="100" value="0" >
+    <span id="display">0</span>
+  </div>
+<div class="aviso"><p>Clique no Goku para carregar o Kamekameha (aumente o volume)</p></div>
+  
+  <script>
+
+    document.getElementById("ssj").addEventListener("mouseup", function(){
+      document.getElementById("ssj").src = "image.png";
+      document.getElementById("volumeSlider").value ++;
+      document.getElementById("display").innerText = document.getElementById("volumeSlider").value;
+    })
+    document.getElementById("ssj").addEventListener("mousedown", function(){
+      document.getElementById("ssj").src = "image.png";
+      document.getElementById("volumeSlider").value ++;
+      document.getElementById("display").innerText = document.getElementById("volumeSlider").value;
+    })
+    document.getElementById("ssj").addEventListener("mouseout", function(){
+      document.getElementById("ssj").src = "goku.png";
+      document.getElementById("volumeSlider").value = 0;
+      document.getElementById("display").innerText = document.getElementById("volumeSlider").value;
+    })
+    setInterval(()=>{
+      document.getElementById("volumeSlider").value --;
+      document.getElementById("display").innerText = document.getElementById("volumeSlider").value;
+    }, 100)
+    
+  </script>
+</body>
+</html>
